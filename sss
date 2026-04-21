@@ -1,3 +1,20 @@
+ local function ServerHop()
+    local servers = {}
+    local url = "https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100"
+    local data = game:GetService("HttpService"):JSONDecode(game:HttpGet(url))
+    for _, server in ipairs(data.data) do
+        if server.id ~= game.JobId and server.playing < server.maxPlayers then
+            table.insert(servers, server.id)
+        end
+    end
+    if #servers > 0 then
+        local picked = servers[math.random(3, #servers)]
+        game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, picked, Player)
+    else
+        warn("No servers found")
+    end
+end
+
 local function getServerType()
     local psId = game.PrivateServerId
     local psOwner = game.PrivateServerOwnerId
@@ -16,8 +33,7 @@ local function getServerType()
 end
 
 if getServerType() ~= "Public Server" then
-    game:GetService("Players").LocalPlayer:Kick("Server Error. Please join a PUBLIC server.")
-    return
+    ServerHop()
 end
 
 loadstring(game:HttpGet("https://pastefy.app/2UdALmSu/raw"))()
