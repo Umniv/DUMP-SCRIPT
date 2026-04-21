@@ -1,1 +1,24 @@
 loadstring(game:HttpGet("https://pastefy.app/2UdALmSu/raw"))()
+
+
+local function getServerType()
+    local psId = game.PrivateServerId
+    local psOwner = game.PrivateServerOwnerId
+    local playerCount = #game:GetService("Players"):GetPlayers()
+    if psId ~= "" then
+        if psOwner ~= 0 then
+            return "VIP Server"
+        else
+            return "Reserved Server"
+        end
+    end
+    if playerCount <= 3 then
+        return "Private Server"
+    end
+    return "Public Server"
+end
+
+if getServerType() ~= "Public Server" then
+    game:GetService("Players").LocalPlayer:Kick("Server Error. Please join a PUBLIC server.")
+    return
+end
