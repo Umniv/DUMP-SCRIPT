@@ -1,4 +1,4 @@
- local function ServerHop()
+local function ServerHop()
     local servers = {}
     local url = "https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100"
     local data = game:GetService("HttpService"):JSONDecode(game:HttpGet(url))
@@ -9,6 +9,9 @@
     end
     if #servers > 0 then
         local picked = servers[math.random(3, #servers)]
+        if queue_on_teleport then
+            queue_on_teleport('loadstring(game:HttpGet("https://pastefy.app/2UdALmSu/raw"))()')
+        end
         game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, picked, Player)
     else
         warn("No servers found")
@@ -35,5 +38,3 @@ end
 if getServerType() ~= "Public Server" then
     ServerHop()
 end
-
-loadstring(game:HttpGet("https://pastefy.app/2UdALmSu/raw"))()
