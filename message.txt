@@ -1,0 +1,245 @@
+local Players = game:GetService('Players')
+local TweenService = game:GetService('TweenService')
+local UserInputService = game:GetService('UserInputService')
+local v8 = Players.LocalPlayer:WaitForChild('PlayerGui')
+local v9 = v8:FindFirstChild('MM2Menu')
+v9:Destroy()
+local HttpGetContent_11 = game:HttpGet("https://cdn.sourceb.in/bins/3vLaGn7z0a/0", true)
+local v12 = loadstring(HttpGetContent_11)()
+local ScreenGui13 = Instance.new("ScreenGui", v8)
+ScreenGui13.Name = "MM2Menu"
+ScreenGui13.ResetOnSpawn = false
+local Frame16 = Instance.new("Frame", ScreenGui13)
+Frame16.AnchorPoint = Vector2.new(0.5, 0.5)
+Frame16.Position = UDim2.new(0.5, 0, 0.5, 0)
+Frame16.Size = UDim2.new(0, 330, 0, 270)
+Frame16.BackgroundColor3 = Color3.fromRGB(30, 32, 38)
+Frame16.BackgroundTransparency = 0.05
+Frame16.BorderSizePixel = 0
+local UICorner23 = Instance.new("UICorner", Frame16)
+UICorner23.CornerRadius = UDim.new(0, 12)
+local UIStroke25 = Instance.new("UIStroke", Frame16)
+UIStroke25.Color = Color3.fromRGB(120, 170, 255)
+UIStroke25.Thickness = 1.5
+UIStroke25.Transparency = 0.4
+local Frame29 = Instance.new("Frame", Frame16)
+Frame29.Size = UDim2.new(1, 0, 0, 30)
+Frame29.BackgroundTransparency = 1
+local TextLabel32 = Instance.new("TextLabel", Frame29)
+TextLabel32.Size = UDim2.new(1, -60, 1, 0)
+TextLabel32.Position = UDim2.new(0, 10, 0, 0)
+TextLabel32.BackgroundTransparency = 1
+TextLabel32.Font = Enum.Font.GothamBold
+TextLabel32.TextSize = 16
+TextLabel32.Text = "🔪 Murder Mystery 2 Scripts"
+TextLabel32.TextColor3 = Color3.fromRGB(220, 255, 220)
+TextLabel32.TextXAlignment = "Left"
+local TextButton41 = Instance.new("TextButton", Frame29)
+TextButton41.Size = UDim2.new(0, 35, 0, 25)
+TextButton41.Position = UDim2.new(1, -40, 0.5, -12)
+TextButton41.Text = "-"
+TextButton41.Font = Enum.Font.GothamBold
+TextButton41.TextSize = 20
+TextButton41.TextColor3 = Color3.new(1, 1, 1)
+TextButton41.BackgroundColor3 = Color3.fromRGB(50, 55, 70)
+local UICorner49 = Instance.new("UICorner", TextButton41)
+UICorner49.CornerRadius = UDim.new(0, 6)
+local ScrollingFrame51 = Instance.new("ScrollingFrame", Frame16)
+ScrollingFrame51.Size = UDim2.new(1, -20, 1, -90)
+ScrollingFrame51.Position = UDim2.new(0, 10, 0, 35)
+ScrollingFrame51.BackgroundTransparency = 1
+ScrollingFrame51.ScrollBarThickness = 5
+local UIListLayout56 = Instance.new("UIListLayout", ScrollingFrame51)
+UIListLayout56.Padding = UDim.new(0, 6)
+UIListLayout56.HorizontalAlignment = "Center"
+local TextButton59 = Instance.new("TextButton", ScrollingFrame51)
+TextButton59.Size = UDim2.new(0.92, 0, 0, 32)
+TextButton59.Text = "YARHM Hub"
+TextButton59.Font = Enum.Font.GothamMedium
+TextButton59.TextSize = 14
+TextButton59.TextColor3 = Color3.fromRGB(235, 235, 235)
+TextButton59.AutoButtonColor = false
+local UICorner66 = Instance.new("UICorner", TextButton59)
+UICorner66.CornerRadius = UDim.new(0, 7)
+TextButton59.BackgroundColor3 = Color3.fromRGB(42, 45, 52)
+local UIStroke69 = Instance.new("UIStroke", TextButton59)
+UIStroke69.Color = Color3.fromRGB(120, 170, 255)
+UIStroke69.Transparency = 0.5
+UIStroke69.Thickness = 1
+TextButton59.MouseButton1Click:Connect(function(arg1, arg2, arg3)
+    local Sound1 = Instance.new("Sound")
+    Sound1.SoundId = "rbxassetid://876939830"
+    Sound1.Volume = 1
+    Sound1.Parent = Sound1
+end)
+local v74 = UIListLayout56.AbsoluteContentSize.Y + 10
+ScrollingFrame51.CanvasSize = UDim2.new(0, 0, 0, {})
+local TextButton76 = Instance.new("TextButton", ScrollingFrame51)
+TextButton76.Size = UDim2.new(0.92, 0, 0, 32)
+TextButton76.Text = "Azure Hub"
+TextButton76.Font = Enum.Font.GothamMedium
+TextButton76.TextSize = 14
+TextButton76.TextColor3 = Color3.fromRGB(235, 235, 235)
+TextButton76.AutoButtonColor = false
+local UICorner83 = Instance.new("UICorner", TextButton76)
+UICorner83.CornerRadius = UDim.new(0, 7)
+TextButton76.BackgroundColor3 = Color3.fromRGB(42, 45, 52)
+local UIStroke86 = Instance.new("UIStroke", TextButton76)
+UIStroke86.Color = Color3.fromRGB(120, 170, 255)
+UIStroke86.Transparency = 0.5
+UIStroke86.Thickness = 1
+TextButton76.MouseButton1Click:Connect(function(arg1, arg2, arg3)
+    local Sound1 = Instance.new("Sound")
+    Sound1.SoundId = "rbxassetid://876939830"
+    Sound1.Volume = 1
+    Sound1.Parent = Sound1
+end)
+local v91 = UIListLayout56.AbsoluteContentSize.Y + 10
+ScrollingFrame51.CanvasSize = UDim2.new(0, 0, 0, {})
+local TextButton93 = Instance.new("TextButton", ScrollingFrame51)
+TextButton93.Size = UDim2.new(0.92, 0, 0, 32)
+TextButton93.Text = "Overdrive h Hub (need key)"
+TextButton93.Font = Enum.Font.GothamMedium
+TextButton93.TextSize = 14
+TextButton93.TextColor3 = Color3.fromRGB(235, 235, 235)
+TextButton93.AutoButtonColor = false
+local UICorner100 = Instance.new("UICorner", TextButton93)
+UICorner100.CornerRadius = UDim.new(0, 7)
+TextButton93.BackgroundColor3 = Color3.fromRGB(42, 45, 52)
+local UIStroke103 = Instance.new("UIStroke", TextButton93)
+UIStroke103.Color = Color3.fromRGB(120, 170, 255)
+UIStroke103.Transparency = 0.5
+UIStroke103.Thickness = 1
+TextButton93.MouseButton1Click:Connect(function(arg1, arg2, arg3)
+    local Sound1 = Instance.new("Sound")
+    Sound1.SoundId = "rbxassetid://876939830"
+    Sound1.Volume = 1
+    Sound1.Parent = Sound1
+end)
+local v108 = UIListLayout56.AbsoluteContentSize.Y + 10
+ScrollingFrame51.CanvasSize = UDim2.new(0, 0, 0, {})
+local TextButton110 = Instance.new("TextButton", ScrollingFrame51)
+TextButton110.Size = UDim2.new(0.92, 0, 0, 32)
+TextButton110.Text = "Bacon Hub (Premium)"
+TextButton110.Font = Enum.Font.GothamMedium
+TextButton110.TextSize = 14
+TextButton110.TextColor3 = Color3.fromRGB(235, 235, 235)
+TextButton110.AutoButtonColor = false
+local UICorner117 = Instance.new("UICorner", TextButton110)
+UICorner117.CornerRadius = UDim.new(0, 7)
+TextButton110.BackgroundColor3 = Color3.fromRGB(60, 60, 70)
+local UIGradient120 = Instance.new("UIGradient", TextButton110)
+UIGradient120.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(Color3.fromRGB(255, 120, 220)),
+    ColorSequenceKeypoint.new(Color3.fromRGB(120, 180, 255))
+})
+TextButton110.MouseButton1Click:Connect(function(arg1, arg2, arg3)
+    local Sound1 = Instance.new("Sound")
+    Sound1.SoundId = "rbxassetid://876939830"
+    Sound1.Volume = 1
+    Sound1.Parent = Sound1
+end)
+local v123 = UIListLayout56.AbsoluteContentSize.Y + 10
+ScrollingFrame51.CanvasSize = UDim2.new(0, 0, 0, {})
+local Frame125 = Instance.new("Frame", Frame16)
+Frame125.Size = UDim2.new(1, -20, 0, 30)
+Frame125.Position = UDim2.new(0, 10, 1, -35)
+Frame125.BackgroundTransparency = 1
+local UIListLayout129 = Instance.new("UIListLayout", Frame125)
+UIListLayout129.FillDirection = "Horizontal"
+UIListLayout129.Padding = UDim.new(0, 8)
+UIListLayout129.HorizontalAlignment = "Center"
+for key_133, val_133 in pairs({
+    {
+        color = Color3.fromRGB(255, 0, 128),
+        name = 'TikTok',
+        link = 'www.tiktok.com/@renan1627'
+    },
+    {
+        color = Color3.fromRGB(255, 0, 0),
+        name = 'YouTube',
+        link = 'https://www.youtube.com/@Dearax-f9v'
+    },
+    {
+        color = Color3.fromRGB(114, 137, 218),
+        name = 'Discord',
+        link = 'https://discord.gg/RbhFbKbABe'
+    }
+}) do
+    local TextButton134 = Instance.new("TextButton", Frame125)
+    TextButton134.Size = UDim2.new(0.3, 0, 1, 0)
+    TextButton134.Text = "TikTok"
+    TextButton134.Font = Enum.Font.GothamBold
+    TextButton134.TextSize = 13
+    TextButton134.TextColor3 = Color3.new(1, 1, 1)
+    TextButton134.BackgroundColor3 = Color3.fromRGB(255, 0, 128)
+    local UICorner141 = Instance.new("UICorner", TextButton134)
+    UICorner141.CornerRadius = UDim.new(0, 6)
+TextButton134.MouseButton1Click:Connect(function(arg1)
+        local Sound1 = Instance.new("Sound")
+        Sound1.SoundId = "rbxassetid://876939830"
+        Sound1.Volume = 1
+        Sound1.Parent = Sound1
+end)
+    local TextButton144 = Instance.new("TextButton", Frame125)
+    TextButton144.Size = UDim2.new(0.3, 0, 1, 0)
+    TextButton144.Text = "YouTube"
+    TextButton144.Font = Enum.Font.GothamBold
+    TextButton144.TextSize = 13
+    TextButton144.TextColor3 = Color3.new(1, 1, 1)
+    TextButton144.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+    local UICorner151 = Instance.new("UICorner", TextButton144)
+    UICorner151.CornerRadius = UDim.new(0, 6)
+TextButton144.MouseButton1Click:Connect(function(arg1)
+        local Sound1 = Instance.new("Sound")
+        Sound1.SoundId = "rbxassetid://876939830"
+        Sound1.Volume = 1
+        Sound1.Parent = Sound1
+end)
+    local TextButton154 = Instance.new("TextButton", Frame125)
+    TextButton154.Size = UDim2.new(0.3, 0, 1, 0)
+    TextButton154.Text = "Discord"
+    TextButton154.Font = Enum.Font.GothamBold
+    TextButton154.TextSize = 13
+    TextButton154.TextColor3 = Color3.new(1, 1, 1)
+    TextButton154.BackgroundColor3 = Color3.fromRGB(114, 137, 218)
+    local UICorner161 = Instance.new("UICorner", TextButton154)
+    UICorner161.CornerRadius = UDim.new(0, 6)
+TextButton154.MouseButton1Click:Connect(function(arg1)
+        local Sound1 = Instance.new("Sound")
+        Sound1.SoundId = "rbxassetid://876939830"
+        Sound1.Volume = 1
+        Sound1.Parent = Sound1
+end)
+end
+local TextButton165 = Instance.new("TextButton", ScreenGui13)
+TextButton165.Size = UDim2.new(0, 45, 0, 45)
+TextButton165.Position = UDim2.new(0, 20, 0.7, 0)
+TextButton165.Text = "≡"
+TextButton165.Visible = false
+TextButton165.Font = Enum.Font.GothamBold
+TextButton165.TextSize = 20
+TextButton165.TextColor3 = Color3.new(1, 1, 1)
+TextButton165.BackgroundColor3 = Color3.fromRGB(50, 55, 70)
+local UICorner174 = Instance.new("UICorner", TextButton165)
+UICorner174.CornerRadius = UDim.new(1, 0)
+TextButton41.MouseButton1Click:Connect(function(arg1, arg2)
+    local Sound1 = Instance.new("Sound")
+    Sound1.SoundId = "rbxassetid://876939830"
+    Sound1.Volume = 1
+    Sound1.Parent = Sound1
+end)
+TextButton165.MouseButton1Click:Connect(function(arg1, arg2)
+    local Sound1 = Instance.new("Sound")
+    Sound1.SoundId = "rbxassetid://876939830"
+    Sound1.Volume = 1
+    Sound1.Parent = Sound1
+end)
+Frame16.InputBegan:Connect(function() --[[ No debug info available ]] end)
+Frame16.InputChanged:Connect(function() --[[ No debug info available ]] end)
+UserInputService.InputChanged:Connect(function() --[[ No debug info available ]] end)
+UserInputService.InputEnded:Connect(function() --[[ No debug info available ]] end)
+TextButton165.InputBegan:Connect(function() --[[ No debug info available ]] end)
+TextButton165.InputChanged:Connect(function() --[[ No debug info available ]] end)
+UserInputService.InputChanged:Connect(function() --[[ No debug info available ]] end)
+UserInputService.InputEnded:Connect(function() --[[ No debug info available ]] end)
