@@ -1,0 +1,384 @@
+-- ts file was generated at discord.gg/25ms
+
+local _call5 = game:GetService('TweenService')
+local _call7 = game:GetService('UserInputService')
+local _call10 = game:GetService('Players').LocalPlayer:WaitForChild('PlayerGui')
+
+_call10:FindFirstChild('MM2Menu'):Destroy()
+loadstring(game:HttpGet('https://cdn.sourceb.in/bins/3vLaGn7z0a/0', true))()
+
+local _call20 = Instance.new('ScreenGui', _call10)
+
+_call20.Name = 'MM2Menu'
+_call20.ResetOnSpawn = false
+
+local _call22 = Instance.new('Frame', _call20)
+
+_call22.AnchorPoint = Vector2.new(0.5, 0.5)
+_call22.Position = UDim2.new(0.5, 0, 0.5, 0)
+_call22.Size = UDim2.new(0, 330, 0, 270)
+_call22.BackgroundColor3 = Color3.fromRGB(30, 32, 38)
+_call22.BackgroundTransparency = 0.05
+_call22.BorderSizePixel = 0
+
+local _call32 = Instance.new('UICorner', _call22)
+
+_call32.CornerRadius = UDim.new(0, 12)
+
+local _call36 = Instance.new('UIStroke', _call22)
+
+_call36.Color = Color3.fromRGB(120, 170, 255)
+_call36.Thickness = 1.5
+_call36.Transparency = 0.4
+
+local _call40 = Instance.new('Frame', _call22)
+
+_call40.Size = UDim2.new(1, 0, 0, 30)
+_call40.BackgroundTransparency = 1
+
+local _call44 = Instance.new('TextLabel', _call40)
+
+_call44.Size = UDim2.new(1, -60, 1, 0)
+_call44.Position = UDim2.new(0, 10, 0, 0)
+_call44.BackgroundTransparency = 1
+_call44.Font = Enum.Font.GothamBold
+_call44.TextSize = 16
+_call44.Text = '\u{1f52a} Murder Mystery 2 Scripts'
+_call44.TextColor3 = Color3.fromRGB(220, 255, 220)
+_call44.TextXAlignment = 'Left'
+
+local _call54 = Instance.new('TextButton', _call40)
+
+_call54.Size = UDim2.new(0, 35, 0, 25)
+_call54.Position = UDim2.new(1, -40, 0.5, -12)
+_call54.Text = '-'
+_call54.Font = Enum.Font.GothamBold
+_call54.TextSize = 20
+_call54.TextColor3 = Color3.new(1, 1, 1)
+_call54.BackgroundColor3 = Color3.fromRGB(50, 55, 70)
+
+local _call66 = Instance.new('UICorner', _call54)
+
+_call66.CornerRadius = UDim.new(0, 6)
+
+local _call70 = Instance.new('ScrollingFrame', _call22)
+
+_call70.Size = UDim2.new(1, -20, 1, -90)
+_call70.Position = UDim2.new(0, 10, 0, 35)
+_call70.BackgroundTransparency = 1
+_call70.ScrollBarThickness = 5
+
+local _call76 = Instance.new('UIListLayout', _call70)
+
+_call76.Padding = UDim.new(0, 6)
+_call76.HorizontalAlignment = 'Center'
+
+local _call80 = Instance.new('TextButton', _call70)
+
+_call80.Size = UDim2.new(0.92, 0, 0, 32)
+_call80.Text = 'YARHM Hub'
+_call80.Font = Enum.Font.GothamMedium
+_call80.TextSize = 14
+_call80.TextColor3 = Color3.fromRGB(235, 235, 235)
+_call80.AutoButtonColor = false
+
+local _call88 = Instance.new('UICorner', _call80)
+
+_call88.CornerRadius = UDim.new(0, 7)
+_call80.BackgroundColor3 = Color3.fromRGB(42, 45, 52)
+
+local _call94 = Instance.new('UIStroke', _call80)
+
+_call94.Color = Color3.fromRGB(120, 170, 255)
+_call94.Transparency = 0.5
+_call94.Thickness = 1
+
+_call80.MouseButton1Click:Connect(function(_100, _100_2, _100_3)
+    local _call102 = Instance.new('Sound')
+
+    _call102.SoundId = 'rbxassetid://876939830'
+    _call102.Volume = 1
+    _call102.Parent = _call80
+
+    _call102:Play()
+    game:GetService('Debris'):AddItem(_call102, 2)
+
+    local _call114 = _call5:Create(_call80, TweenInfo.new(0.1), {
+        Size = UDim2.new(0.95, 0, 0, 34),
+    })
+
+    _call114:Play()
+    task.wait(0.1)
+
+    local _call122 = _call5:Create(_call80, TweenInfo.new(0.1), {
+        Size = UDim2.new(0.92, 0, 0, 32),
+    })
+
+    _call122:Play()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/main/yarhm.lua'))()
+end)
+
+_call70.CanvasSize = UDim2.new(0, 0, 0, (_call76.AbsoluteContentSize.Y + 10))
+
+local _call135 = Instance.new('TextButton', _call70)
+
+_call135.Size = UDim2.new(0.92, 0, 0, 32)
+_call135.Text = 'Azure Hub'
+_call135.Font = Enum.Font.GothamMedium
+_call135.TextSize = 14
+_call135.TextColor3 = Color3.fromRGB(235, 235, 235)
+_call135.AutoButtonColor = false
+
+local _call143 = Instance.new('UICorner', _call135)
+
+_call143.CornerRadius = UDim.new(0, 7)
+_call135.BackgroundColor3 = Color3.fromRGB(42, 45, 52)
+
+local _call149 = Instance.new('UIStroke', _call135)
+
+_call149.Color = Color3.fromRGB(120, 170, 255)
+_call149.Transparency = 0.5
+_call149.Thickness = 1
+
+_call135.MouseButton1Click:Connect(function(_155, _155_2, _155_3)
+    local _call157 = Instance.new('Sound')
+
+    _call157.SoundId = 'rbxassetid://876939830'
+    _call157.Volume = 1
+    _call157.Parent = _call135
+
+    _call157:Play()
+    game:GetService('Debris'):AddItem(_call157, 2)
+
+    local _call169 = _call5:Create(_call135, TweenInfo.new(0.1), {
+        Size = UDim2.new(0.95, 0, 0, 34),
+    })
+
+    _call169:Play()
+    task.wait(0.1)
+
+    local _call177 = _call5:Create(_call135, TweenInfo.new(0.1), {
+        Size = UDim2.new(0.92, 0, 0, 32),
+    })
+
+    _call177:Play()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Aura-56/MurderMystery2/refs/heads/main/AzureHub.lua'))()
+end)
+
+_call70.CanvasSize = UDim2.new(0, 0, 0, (_call76.AbsoluteContentSize.Y + 10))
+
+local _call190 = Instance.new('TextButton', _call70)
+
+_call190.Size = UDim2.new(0.92, 0, 0, 32)
+_call190.Text = 'Overdrive h Hub (need key)'
+_call190.Font = Enum.Font.GothamMedium
+_call190.TextSize = 14
+_call190.TextColor3 = Color3.fromRGB(235, 235, 235)
+_call190.AutoButtonColor = false
+
+local _call198 = Instance.new('UICorner', _call190)
+
+_call198.CornerRadius = UDim.new(0, 7)
+_call190.BackgroundColor3 = Color3.fromRGB(42, 45, 52)
+
+local _call204 = Instance.new('UIStroke', _call190)
+
+_call204.Color = Color3.fromRGB(120, 170, 255)
+_call204.Transparency = 0.5
+_call204.Thickness = 1
+
+_call190.MouseButton1Click:Connect(function(_210, _210_2, _210_3)
+    local _call212 = Instance.new('Sound')
+
+    _call212.SoundId = 'rbxassetid://876939830'
+    _call212.Volume = 1
+    _call212.Parent = _call190
+
+    _call212:Play()
+    game:GetService('Debris'):AddItem(_call212, 2)
+
+    local _call224 = _call5:Create(_call190, TweenInfo.new(0.1), {
+        Size = UDim2.new(0.95, 0, 0, 34),
+    })
+
+    _call224:Play()
+    task.wait(0.1)
+
+    local _call232 = _call5:Create(_call190, TweenInfo.new(0.1), {
+        Size = UDim2.new(0.92, 0, 0, 32),
+    })
+
+    _call232:Play()
+    loadstring(game:HttpGet('https://rawscripts.net/raw/Universal-Script-Overdrive-Hub-43383'))()
+end)
+
+_call70.CanvasSize = UDim2.new(0, 0, 0, (_call76.AbsoluteContentSize.Y + 10))
+
+local _call245 = Instance.new('TextButton', _call70)
+
+_call245.Size = UDim2.new(0.92, 0, 0, 32)
+_call245.Text = 'Bacon Hub (Premium)'
+_call245.Font = Enum.Font.GothamMedium
+_call245.TextSize = 14
+_call245.TextColor3 = Color3.fromRGB(235, 235, 235)
+_call245.AutoButtonColor = false
+
+local _call253 = Instance.new('UICorner', _call245)
+
+_call253.CornerRadius = UDim.new(0, 7)
+_call245.BackgroundColor3 = Color3.fromRGB(60, 60, 70)
+
+local _call259 = Instance.new('UIGradient', _call245)
+local _call269 = ColorSequence.new({
+    [1] = ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 120, 220)),
+    [2] = ColorSequenceKeypoint.new(1, Color3.fromRGB(120, 180, 255)),
+})
+
+_call259.Color = _call269
+
+_call245.MouseButton1Click:Connect(function(_273, _273_2, _273_3)
+    local _call275 = Instance.new('Sound')
+
+    _call275.SoundId = 'rbxassetid://876939830'
+    _call275.Volume = 1
+    _call275.Parent = _call245
+
+    _call275:Play()
+    game:GetService('Debris'):AddItem(_call275, 2)
+
+    local _call287 = _call5:Create(_call245, TweenInfo.new(0.1), {
+        Size = UDim2.new(0.95, 0, 0, 34),
+    })
+
+    _call287:Play()
+    task.wait(0.1)
+
+    local _call295 = _call5:Create(_call245, TweenInfo.new(0.1), {
+        Size = UDim2.new(0.92, 0, 0, 32),
+    })
+
+    _call295:Play()
+    setclipboard('www.tiktok.com/@renan1627')
+    game.StarterGui:SetCore('SendNotification', {
+        Text = 'Follow YouTube and TikTok for update',
+        Title = 'Copied!',
+        Duration = 5,
+    })
+end)
+
+_call70.CanvasSize = UDim2.new(0, 0, 0, (_call76.AbsoluteContentSize.Y + 10))
+
+local _call308 = Instance.new('Frame', _call22)
+
+_call308.Size = UDim2.new(1, -20, 0, 30)
+_call308.Position = UDim2.new(0, 10, 1, -35)
+_call308.BackgroundTransparency = 1
+
+local _call314 = Instance.new('UIListLayout', _call308)
+
+_call314.FillDirection = 'Horizontal'
+_call314.Padding = UDim.new(0, 8)
+_call314.HorizontalAlignment = 'Center'
+
+local _call324 = Instance.new('TextButton', _call308)
+
+_call324.Size = UDim2.new(0.3, 0, 1, 0)
+_call324.Text = 'TikTok'
+_call324.Font = Enum.Font.GothamBold
+_call324.TextSize = 13
+_call324.TextColor3 = Color3.new(1, 1, 1)
+_call324.BackgroundColor3 = Color3.fromRGB(255, 0, 128)
+
+local _call332 = Instance.new('UICorner', _call324)
+
+_call332.CornerRadius = UDim.new(0, 6)
+
+_call324.MouseButton1Click:Connect(function(_338)
+    local _call340 = Instance.new('Sound')
+
+    _call340.SoundId = 'rbxassetid://876939830'
+    _call340.Volume = 1
+    _call340.Parent = _call324
+
+    _call340:Play()
+    game:GetService('Debris'):AddItem(_call340, 2)
+    setclipboard('www.tiktok.com/@renan1627')
+    game.StarterGui:SetCore('SendNotification', {
+        Text = 'TikTok link copied.',
+        Title = 'Copied!',
+        Duration = 4,
+    })
+end)
+
+local _call352 = Instance.new('TextButton', _call308)
+
+_call352.Size = UDim2.new(0.3, 0, 1, 0)
+_call352.Text = 'YouTube'
+_call352.Font = Enum.Font.GothamBold
+_call352.TextSize = 13
+_call352.TextColor3 = Color3.new(1, 1, 1)
+_call352.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+
+local _call360 = Instance.new('UICorner', _call352)
+
+_call360.CornerRadius = UDim.new(0, 6)
+
+_call352.MouseButton1Click:Connect(function(_366)
+    local _call368 = Instance.new('Sound')
+
+    _call368.SoundId = 'rbxassetid://876939830'
+    _call368.Volume = 1
+    _call368.Parent = _call352
+
+    _call368:Play()
+    game:GetService('Debris'):AddItem(_call368, 2)
+    setclipboard('https://www.youtube.com/@Dearax-f9v')
+    game.StarterGui:SetCore('SendNotification', {
+        Text = 'YouTube link copied.',
+        Title = 'Copied!',
+        Duration = 4,
+    })
+end)
+
+local _call380 = Instance.new('TextButton', _call308)
+
+_call380.Size = UDim2.new(0.3, 0, 1, 0)
+_call380.Text = 'Discord'
+_call380.Font = Enum.Font.GothamBold
+_call380.TextSize = 13
+_call380.TextColor3 = Color3.new(1, 1, 1)
+_call380.BackgroundColor3 = Color3.fromRGB(114, 137, 218)
+
+local _call388 = Instance.new('UICorner', _call380)
+
+_call388.CornerRadius = UDim.new(0, 6)
+
+_call380.MouseButton1Click:Connect(function(_394)
+    error('internal 579: <25ms: infinitelooperror>')
+end)
+
+local _call397 = Instance.new('TextButton', _call20)
+
+_call397.Size = UDim2.new(0, 45, 0, 45)
+_call397.Position = UDim2.new(0, 20, 0.7, 0)
+_call397.Text = '\u{2261}'
+_call397.Visible = false
+_call397.Font = Enum.Font.GothamBold
+_call397.TextSize = 20
+_call397.TextColor3 = Color3.new(1, 1, 1)
+_call397.BackgroundColor3 = Color3.fromRGB(50, 55, 70)
+
+local _call409 = Instance.new('UICorner', _call397)
+
+_call409.CornerRadius = UDim.new(1, 0)
+
+_call54.MouseButton1Click:Connect(function() end)
+_call397.MouseButton1Click:Connect(function(_419, _419_2) end)
+_call22.InputBegan:Connect(function(_423, _423_2, _423_3, _423_4, _423_5, _423_6) end)
+_call22.InputChanged:Connect(function(_427, _427_2, _427_3, _427_4, _427_5) end)
+_call7.InputChanged:Connect(function(_431, _431_2, _431_3, _431_4, _431_5) end)
+_call7.InputEnded:Connect(function(_435, _435_2, _435_3, _435_4, _435_5) end)
+_call397.InputBegan:Connect(function(_439, _439_2, _439_3, _439_4, _439_5, _439_6) end)
+_call397.InputChanged:Connect(function(_443, _443_2, _443_3, _443_4, _443_5) end)
+_call7.InputChanged:Connect(function(_447, _447_2, _447_3, _447_4, _447_5) end)
+_call7.InputEnded:Connect(function(_451, _451_2, _451_3, _451_4, _451_5) end)
