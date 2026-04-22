@@ -1,5 +1,3 @@
--- ts file was generated at discord.gg/25ms
-
 local _call5 = game:GetService('TweenService')
 local _call7 = game:GetService('UserInputService')
 local _call10 = game:GetService('Players').LocalPlayer:WaitForChild('PlayerGui')
