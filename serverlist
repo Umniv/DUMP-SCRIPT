@@ -317,7 +317,7 @@ loadServerList()
 --intro 
 game:GetService("StarterGui"):SetCore("SendNotification", {
     Title = "Server Hop",
-    Text = " Made by:Lumpiasallad",
+    Text = " Made by:Umniv",
     Duration = 5
 })
 
